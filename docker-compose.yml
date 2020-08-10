@@ -1,7 +1,7 @@
 version: "3.8"
 services:
     service-socks:
-        image: docker-htsp:latest
+        image: gregoriomomm/docker-htsp:latest
         container_name: docker-htsp
         restart: always   
         networks: 
@@ -12,8 +12,6 @@ services:
             - source: ./tsocks.conf
               target: /etc/tsocks.conf
               type: bind 
-        command: "/run.sh"
-
 networks:
      service-net:
          driver: bridge
