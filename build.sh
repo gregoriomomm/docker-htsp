@@ -1,7 +1,7 @@
 #!/bin/sh
-docker build . -t docker-htps:almost
-docker-squash  -t "docker-htps:latest" "docker-htps:almost"
-docker save -o docker-htps.tar "docker-htps:latest"
+docker build . -t docker-htsp:almost
+docker-squash  -t "docker-htsp:latest" "docker-htsp:almost"
+docker save -o docker-htsp.tar "docker-htsp:latest"
 
-gzip -f docker-htps.tar
+gzip -f docker-htsp.tar
  
