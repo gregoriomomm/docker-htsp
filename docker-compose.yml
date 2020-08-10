@@ -1,8 +1,8 @@
 version: "3.8"
 services:
     service-socks:
-        image: docker-htps:latest
-        container_name: docker-htps
+        image: docker-htsp:latest
+        container_name: docker-htsp
         restart: always   
         networks: 
             - service-net
