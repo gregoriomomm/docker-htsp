@@ -5,4 +5,12 @@ Adjust the tsocks.conf and run by using docker-compose up -d
 
 Then just point the HTTP SOCKS PROXY configuration desired to localhost:3128 or port configured in yout docker-compose.yml
 
-docker run -v ./tsocks.conf:/etc/tsocks.conf -p 3128:3128 docker-htsp:latest 
+docker run -v <dir>/tsocks.conf:/etc/tsocks.conf -p 3128:3128 docker-htsp:latest 
+  
+Example: 
+export http_proxy="http://127.0.0.1:3128"
+export https_proxy="http://127.0.0.1:3128"
+
+curl http://host.target.domain
+
+
