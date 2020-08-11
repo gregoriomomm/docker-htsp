@@ -1,12 +1,14 @@
 # Docker HTTP to SOCKS5 PROXY
 
-Adjust the tsocks.conf and run by using 
+Adjust the tsocks.conf replacing the variables by your user name and password, 
+and other configurations related to your SOCKS5 paths: 
 
-```bash
-docker-compose up -d 
+```
+default_user = user
+default_pass = password
 ```
 
-Then just point the HTTP SOCKS PROXY configuration desired to localhost:3128 or port configured in yout docker-compose.yml
+and check if the tsocks.conf is the correct path inside docker-compose.yml and run by using : 
 
 ```bash
 docker run -v path/tsocks.conf:/etc/tsocks.conf -p 3128:3128 docker-htsp:latest 
