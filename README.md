@@ -23,11 +23,9 @@ Example:
 ```bash
 export http_proxy="http://127.0.0.1:3128"
 export https_proxy="http://127.0.0.1:3128"
-```
+
 curl http://host.target.domain
-
-
-
+```
 
 Or configure the Windows Proxy :
 
