@@ -20,6 +20,11 @@ docker run -v path/tsocks.conf:/etc/tsocks.conf -p 3128:3128 docker-htsp:latest
 
 Example: 
 
+[Java](https://docs.oracle.com/javase/7/docs/technotes/guides/net/proxies.html): 
+```
+export JVM_ARGS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=3128"
+```
+
 ```bash
 export http_proxy="http://127.0.0.1:3128"
 export https_proxy="http://127.0.0.1:3128"
