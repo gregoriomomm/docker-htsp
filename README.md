@@ -13,4 +13,6 @@ export https_proxy="http://127.0.0.1:3128"
 
 curl http://host.target.domain
 
+Or configure the Windows Proxy :
 
+![Windows proxy](./proxy.jpg)
