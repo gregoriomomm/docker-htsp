@@ -12,7 +12,7 @@ default_user = user
 default_pass = password
 ```
 
-and check if the tsocks.conf is the correct path inside docker-compose.yml and run by using : 
+and check if the tsocks.conf is pointing to the correct path inside docker-compose.yml and run by using : 
 
 ```bash
 docker run -v path/tsocks.conf:/etc/tsocks.conf -p 3128:3128 docker-htsp:latest 
