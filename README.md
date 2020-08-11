@@ -22,7 +22,7 @@ Example:
 
 [Java](https://docs.oracle.com/javase/7/docs/technotes/guides/net/proxies.html): 
 ```
-export JVM_ARGS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=3128"
+export JVM_ARGS='-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts="localhost|127.0.0.1|host.example.com"'
 ```
 
 Unix:
